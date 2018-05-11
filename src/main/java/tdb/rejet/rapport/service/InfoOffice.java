@@ -1,12 +1,20 @@
 package tdb.rejet.rapport.service;
-public class CodeOffice{
+public class InfoOffice{
 	
 	String codeCsn;
 	String codeCrpcen;
+	String dateRejet;
 	
-	public CodeOffice(String codeCsn, String codeCrpcen) {
+	public String getDateRejet() {
+		return dateRejet;
+	}
+	public void setDateRejet(String dateRejet) {
+		this.dateRejet = dateRejet;
+	}
+	public InfoOffice(String codeCsn, String codeCrpcen, String dateRejet) {
 		this.codeCsn = codeCsn;
 		this.codeCrpcen = codeCrpcen;
+		this.dateRejet =dateRejet;
 	}
 	public String getCodeCsn() {
 		return codeCsn;
